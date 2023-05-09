@@ -1,4 +1,4 @@
-const { stringLength, reverseString, calculator } = require("./codeHere");
+const { stringLength, reverseString, calculator ,capitalizeString } = require("./codeHere");
 
 
 // test 1 string length
@@ -98,3 +98,19 @@ describe("calculator: multiply" , ()=>{
   })
 
 });
+
+// task 4 capitalize string 
+
+describe("capitalize String" , ()=>{
+  test("capitalize 1" , ()=>{
+    expect(capitalizeString('hello world')).toBe('Hello world')
+  })
+
+  test("capitalize 2" , ()=>{
+    expect(capitalizeString('microverse')).toBe('Microverse')
+  })
+
+  test("capitalize 3" , ()=>{
+    expect(capitalizeString('ankit')).toBe('Ankit')
+  })
+})

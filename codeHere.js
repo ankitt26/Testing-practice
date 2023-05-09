@@ -1,3 +1,5 @@
+// stringLength
+
 const stringLength = (string) => {
   if (string.length == 0) {
     new Error("atleast 1 ");
@@ -10,9 +12,13 @@ const stringLength = (string) => {
   return string.length;
 };
 
+// reverseString
+
 const reverseString = (string) => {
  return string.split('').reverse().join('') ;
 };
+
+// calculator
 
 class calculator{
 
@@ -33,5 +39,15 @@ multiply(a,b){
 }
 }
 
+// capitalizeString
 
-module.exports = { stringLength , reverseString , calculator};
+const capitalizeString = (string)=>{
+let firstChar = string.charAt(0);
+firstChar = firstChar.toUpperCase();
+const newString = string.substring(1);
+const reverseStr = `${firstChar}${newString}`
+return reverseStr ;
+}
+
+module.exports = { stringLength , reverseString , calculator , capitalizeString};
+
